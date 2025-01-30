@@ -15,6 +15,7 @@
                 clifford: '#da373d',
                 accent: '#179800',
                 primary: '#111111',
+                ashbg: '#EFEBE3',
               },
               fontFamily:{
                 poppins: ['Poppins', 'serif'],
@@ -37,7 +38,8 @@
 </head>
 <body>
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#fff] font-sora">
-        <nav class="mb-[90px]">
+        <!-- navbar section -->
+        <nav class="mb-[48px] lg:mb-[90px]">
             <!-- nav for small devices -->
              <div class="mb-12 flex justify-between items-center border border-accent py-[14px] px-4 lg:hidden">
                 <img src="./assets/leaf.png" alt="photo of green leaf" class="w-[48px] h-[43px]">
@@ -76,7 +78,32 @@
     </header>
 
     <main>
-
+        <!-- Services section -->
+         <section class="font-sora">
+            <!-- services-container -->
+            <div class="mx-4 my-12 lg:m-[140px]">
+                <!-- service section title -->
+                <h2 class="text-2xl lg:text-4xl font-semibold text-accent mb-8 lg:mb-12">Services</h2>
+                <!-- service section cards container -->
+                <div class="flex flex-col lg:flex-row gap-5 lg:gap-6">
+                    <div class="p-8 flex flex-col justify-center items-center gap-6 bg-ashbg rounded-2xl">
+                        <div class="w-[125px] h-[125px] lg:w-[150px] lg:h-[150px] bg-white flex justify-center items-center rounded-full"><img class="w-[85px] h-[85px] lg:w-[100] lg:h-[100]" src="./assets/service.png" alt=""></div>
+                        <h3 class="text-xl lg:text-2xl font-semibold text-center text-primary">24/7 Services </h3>
+                        <p class="text-base lg:text-xl font-light text-center text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <div class="p-8 flex flex-col justify-center items-center gap-6 bg-ashbg rounded-2xl">
+                        <div class="w-[125px] h-[125px] lg:w-[150px] lg:h-[150px] bg-white flex justify-center items-center rounded-full"><img class="w-[85px] h-[85px] lg:w-[100] lg:h-[100]" src="./assets/delivery.png" alt=""></div>
+                        <h3 class="text-xl lg:text-2xl font-semibold text-center text-primary">Fast Delivery</h3>
+                        <p class="text-base lg:text-xl font-light text-center text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <div class="p-8 flex flex-col justify-center items-center gap-6 bg-ashbg rounded-2xl">
+                        <div class="w-[125px] h-[125px] lg:w-[150px] lg:h-[150px] bg-white flex justify-center items-center rounded-full"><img class="w-[85px] h-[85px] lg:w-[100] lg:h-[100]" src="./assets/healthy.png" alt=""></div>
+                        <h3 class="text-xl lg:text-2xl font-semibold text-center text-primary">Healthy Products </h3>
+                        <p class="text-base lg:text-xl font-light text-center text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
 
     <footer>
