@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's platter</title>
     <!-- tailwind & daisy UI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -13,7 +13,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                primary: '#179800',
+                accent: '#179800',
+                primary: '#111111',
               },
               fontFamily:{
                 poppins: ['Poppins', 'serif'],
@@ -35,8 +36,35 @@
       <script src="https://kit.fontawesome.com/b2abfd9036.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#fff]">
+        <nav class="">
+            <!-- nav for small devices -->
+             <div class="flex justify-between items-center border border-accent py-[14px] px-4 lg:hidden">
+                <img src="./assets/leaf.png" alt="photo of green leaf" class="w-[48px] h-[43px]">
+                <i class="fa-solid fa-bars text-2xl text-accent"></i>
+             </div>
+             <div class="flex justify-between items-center lg:w-11/12 mx-auto py-6 hidden lg:flex">
+                <!-- nav left container -->
+             <div class="flex-1">
+                <img src="./assets/logo-header.png" alt="">
+         </div>
+         <!-- nav middle container -->
+          <div class="flex-1">
+            <ul class="flex justify-center gap-8">
+                <li><a href="#" class="text-primary font-sora font-normal text-xl">Product</a></li>
+                <li><a href="#" class="text-primary font-sora font-normal text-xl">Services</a></li>
+                <li><a href="#" class="text-primary font-sora font-normal text-xl">Contact us</a></li>
+            </ul>
+          </div>
+         <!-- nav right container -->
+          <div class="flex justify-end flex-1 items-center gap-3">
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <i class="fa-solid fa-cart-shopping text-2xl mr-3"></i>
+            <button class="py-[9px] px-[29px] border border-accent rounded-lg text-xl text-primary font-sora">Login</button>
+            <button class="py-[10px] px-[30px] bg-accent rounded-lg text-xl text-white font-sora">Register</button>
+          </div>
+             </div>
+        </nav>
     </header>
 
     <main>
@@ -44,7 +72,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
