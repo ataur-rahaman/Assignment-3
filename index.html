@@ -22,9 +22,25 @@
                 sora: ['Sora', 'serif'],
               }
             }
-          }
+        }
         }
       </script>
+
+<style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+
+      @keyframes popInOut {
+        0%, 100% {transform: scale(1);}
+        50% {transform: scale(1.1);}        
+      }
+      .popInOut {
+        animation: popInOut 2s ease-in-out infinite;
+      }
+    }
+  </style>
       <!-- google fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,8 +85,8 @@
         </nav>
         <!-- Banner section -->
          <div>
-            <h1 class="mb-4 w-11/12 mx-auto text-[2rem] text-primary lg:text-[3.5rem] font-semibold text-center">Freshness <span class="text-accent">You Can <br>Count</span> On, Prices You'll Love!</h1>
-            <p class="mb-4 w-11/12 mx-auto text-primary text-xl text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
+            <h1 class="popInOut mb-4 w-11/12 mx-auto text-[2rem] text-primary lg:text-[3.5rem] font-semibold text-center ">Freshness <span class="text-accent">You Can <br>Count</span> On, Prices You'll Love!</h1>
+            <p class=" mb-4 w-11/12 mx-auto text-primary text-xl text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
             <div>
                 <img class="mx-auto" src="./assets/hero-vegetables.png" alt="photo of vegetables">
             </div>
@@ -83,7 +99,7 @@
             <!-- services-container -->
             <div class="mx-4 my-12 lg:m-[140px]">
                 <!-- service section title -->
-                <h2 class="text-2xl lg:text-4xl font-semibold text-accent mb-8 lg:mb-12">Services</h2>
+                <h2 class=" text-2xl lg:text-4xl font-semibold text-accent mb-8 lg:mb-12">Services</h2>
                 <!-- service section cards container -->
                 <div class="flex flex-col lg:flex-row gap-5 lg:gap-6">
                     <div class="p-8 flex flex-col justify-center items-center gap-6 bg-ashbg rounded-2xl">
@@ -289,7 +305,7 @@
     </main>
 
     <footer class="relative font-sora text-white bg-accent z-[1]">
-        <div class="flex justify-between items-end px-4 lg:px-[140px] pt-[281px] lg:pt-[370px] pb-[48px] lg:pb-[140px]">
+        <div class="flex flex-col gap-8 lg:flex-row justify-between lg:items-end px-4 lg:px-[140px] pt-[281px] lg:pt-[370px] pb-[48px] lg:pb-[140px]">
             <div>
                 <img class="mb-3" src="./assets/logo-footer.png" alt="">
                 <p class="text-base lg:text-xl font-normal">Discover a world of treats, toys, and <br>essentials handpicked for your furry friends</p>
